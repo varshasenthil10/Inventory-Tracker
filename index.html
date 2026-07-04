@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inventory Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Inventory Tracker</h1>
+
+        <div class="form">
+            <input type="text" id="productName" placeholder="Product Name">
+
+            <input type="text" id="category" placeholder="Category">
+
+            <input type="number" id="quantity" placeholder="Quantity">
+
+            <input type="number" id="price" placeholder="Price">
+
+            <button onclick="addProduct()">Add Product</button>
+        </div>
+
+        <br>
+
+        <input type="text" id="search" placeholder="Search Product..." onkeyup="searchProduct()">
+
+        <br><br>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Product</th>
+                    <th>Category</th>
+                    <th>Quantity</th>
+                    <th>Price</th>
+                    <th>Status</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+
+            <tbody id="productTable">
+
+            </tbody>
+        </table>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
